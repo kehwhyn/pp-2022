@@ -1,0 +1,23 @@
+#!/bin/bash
+#SBATCH --export=ALL
+#SBATCH -N 1 # numero de nodos
+#SBATCH -t 5 # tempo maximo de execucao: 5min
+#SBATCH --exclusive
+#SBATCH --no-requeue
+#SBATCH -o %x.%j.out # formato do nome do arquivo de saída
+#SBATCH -D /home/pp03015/programacao-paralela/1 # diretório
+echo ################
+echo Running on host `hostname`
+echo
+echo Initial Time is `date`
+echo
+echo Directory is `pwd`
+echo
+echo This jobs runs on the following nodes:
+echo $SLURM_JOB_NODELIST
+echo
+echo JOB_ID:
+echo $SLURM_JOBID
+echo ################
+./out/paralelo 25 8 data/par/08/paralelo-08-025.txt
+echo Final Time is `date`

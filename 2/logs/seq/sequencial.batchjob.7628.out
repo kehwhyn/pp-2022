@@ -1,0 +1,25 @@
+Running on host grad05
+
+Initial Time is Wed 23 Nov 2022 05:17:45 PM -03
+
+Directory is /home/pp03015/programacao-paralela/2
+
+This jobs runs on the following nodes:
+grad05
+
+JOB_ID:
+7628
+
+Sequencial
+1000000 9.635846
+2000000 19.572524
+3000000 29.846717
+4000000 40.858577
+5000000 51.600049
+6000000 62.440340
+7000000 68.484997
+8000000 72.510818
+9000000 97.133865
+10000000 121.439348
+
+Final Time is Wed 23 Nov 2022 05:29:45 PM -03

@@ -1,0 +1,22 @@
+Running on host grad05
+
+Initial Time is Wed 23 Nov 2022 05:03:44 PM -03
+
+Directory is /home/pp03015/programacao-paralela/2
+
+This jobs runs on the following nodes:
+grad05
+
+JOB_ID:
+7627
+
+Sequencial
+1000000 9.760417
+2000000 19.676262
+3000000 29.940224
+4000000 40.486762
+5000000 51.169285
+6000000 61.906277
+7000000 68.705299
+8000000 72.335722
+slurmstepd-grad05: error: *** JOB 7627 ON grad05 CANCELLED AT 2022-11-23T17:14:03 DUE TO TIME LIMIT ***
