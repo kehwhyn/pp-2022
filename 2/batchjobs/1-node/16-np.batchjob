@@ -78,7 +78,7 @@ echo ################
 ############# Commands...
 
 echo "16 processos"
-mpirun -np 16 ./out/paralelo
+mpirun -np 16 out/paralelo >> data/1-node/16-np.csv
 echo
 
 ################

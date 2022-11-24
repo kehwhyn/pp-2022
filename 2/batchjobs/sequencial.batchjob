@@ -15,7 +15,7 @@
 #SBATCH --ntasks-per-node=8
 
 # time 
-#SBATCH -t 15
+#SBATCH -t 80
 # time formats =  "minutes", "minutes:seconds", "hours:minutes:seconds", "days-hours", "days-hours:minutes" and "days-hours:minutes:seconds"
 
 # Exclusive (alloc all threads from each node) or shared (alloc only threads set by "-n" parameter)
@@ -79,7 +79,7 @@ echo ################
 ############# Commands...
 
 echo "Sequencial"
-mpirun ./out/sequencial
+mpirun out/sequencial > data/sequencial.csv
 echo
 
 ################

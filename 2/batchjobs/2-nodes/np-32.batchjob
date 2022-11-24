@@ -78,7 +78,7 @@ echo ################
 ############# Commands...
 
 echo "32 processos (bynode)"
-mpirun -np 32 ./out/paralelo
+mpirun -np 32 out/paralelo >> data/2-nodes/32-np.csv
 echo
 
 ################

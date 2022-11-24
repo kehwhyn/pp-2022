@@ -56,36 +56,40 @@ int main(int argc, char** argv) {
     MPI_Comm_size(MPI_COMM_WORLD, &n);
 
     if (id == 0) {
-        /* Gera os coeficientes do polinomio */
-        #pragma omp parallel for
-        for (i = 0; i <= GRAU; ++i)
-            a[i] = (i % 3 == 0) ? -1.0 : 1.0;
+        printf("iter,size,time\n");
 
-        /* Preenche vetores */
-        #pragma omp parallel for
-        for (i = 0; i < TAM_MAX; ++i) {
-            x[i] = 0.1 +0.1 * (double) i / TAM_MAX;
-            gabarito[i] = polinomio(a, GRAU, x[i]);
-        }
+        for (int iter = 0; iter < 5; iter++) {
+            /* Gera os coeficientes do polinomio */
+            #pragma omp parallel for
+            for (i = 0; i <= GRAU; ++i)
+                a[i] = (i % 3 == 0) ? -1.0 : 1.0;
 
-        /* Gera tabela com tamanhos e tempos */
-        for (size = TAM_INI; size <= TAM_MAX; size += TAM_INC) {
-            /* Calcula */
-            tempo = -MPI_Wtime();
-            for (i = 0; i < size; ++i)
-                y[i] = polinomio(a, GRAU, x[i]);
-            tempo += MPI_Wtime();
+            /* Preenche vetores */
+            #pragma omp parallel for
+            for (i = 0; i < TAM_MAX; ++i) {
+                x[i] = 0.1 +0.1 * (double) i / TAM_MAX;
+                gabarito[i] = polinomio(a, GRAU, x[i]);
+            }
 
-            /* Verificacao */
-            for ( i = 0; i < size; ++i)
-                if (y[i] != gabarito[i])
-                    erro("verificacao falhou!");
+            /* Gera tabela com tamanhos e tempos */
+            for (size = TAM_INI; size <= TAM_MAX; size += TAM_INC) {
+                /* Calcula */
+                tempo = -MPI_Wtime();
+                for (i = 0; i < size; ++i)
+                    y[i] = polinomio(a, GRAU, x[i]);
+                tempo += MPI_Wtime();
 
-            /* Mostra tempo */
-            printf("%d %lf\n",size,tempo);
+                /* Verificacao */
+                for (i = 0; i < size; ++i)
+                    if (y[i] != gabarito[i])
+                        erro("verificacao falhou!");
+
+                /* Mostra tempo */
+                printf("%d,%d,%lf\n", iter, size, tempo);
+            }
         }
     }
-    
+
     MPI_Finalize();
     return 0;
 }
