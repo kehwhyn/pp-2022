@@ -77,17 +77,18 @@ int main(int argc, char** argv) {
             
             /* Calcula */
             tempo = -MPI_Wtime();
-            for (int child_id = 1, stop_signal = 0, lower_range = 0; child_id < num_procs; child_id++) {
+            for (int child_id = 1, stop_signal = 0; child_id < num_procs; child_id++) {
                 // distribuo a mesma quantidade para cada filho => balanceamento de carga
-                int upper_range = child_id * size / (num_procs - 1); 
-                int range = upper_range - lower_range;
+                int lower_bound = (child_id - 1) * size / (num_procs - 1);
+                int upper_bound = child_id * size / (num_procs - 1);
+                int size = upper_bound - lower_bound;
                 
                 MPI_Send(&stop_signal, 1, MPI_INT, child_id, 1, MPI_COMM_WORLD);
-                MPI_Send(&range, 1, MPI_INT, child_id, 1, MPI_COMM_WORLD);
-                MPI_Send(&lower_range, 1, MPI_INT, child_id, 1, MPI_COMM_WORLD);
-                MPI_Send(&x[lower_range], range, MPI_DOUBLE, child_id, 1, MPI_COMM_WORLD);
+                MPI_Send(&size, 1, MPI_INT, child_id, 1, MPI_COMM_WORLD);
+                MPI_Send(&lower_bound, 1, MPI_INT, child_id, 1, MPI_COMM_WORLD);
+                MPI_Send(&x[lower_bound], size, MPI_DOUBLE, child_id, 1, MPI_COMM_WORLD);
                 
-                lower_range = upper_range;
+                printf("lower: %d - upper: %d - size: %d\n", lower_bound, upper_bound, size);
             }
 
             for (int child_id = 1, tam, index; child_id < num_procs; child_id++) {

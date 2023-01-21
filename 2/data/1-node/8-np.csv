@@ -49,3 +49,74 @@ iter,size,time
 4,8000000,7.788531
 4,9000000,8.691261
 4,10000000,9.718835
+tam: 142857 - index 1000000tam: 142857 - index: 1000000 - upper: 142857 - range: 142857 - lower: 142857
+tam: 142857 - index 857143tam: 142857 - index: 857143 - upper: 285714 - range: 142857 - lower: 285714
+tam: 142857 - index 714286tam: 142857 - index: 714286 - upper: 428571 - range: 142857 - lower: 428571
+tam: 142857 - index 571429tam: 142857 - index: 571429 - upper: 571428 - range: 142857 - lower: 571428
+tam: 142857 - index 428572tam: 142857 - index: 428572 - upper: 714285 - range: 142857 - lower: 714285
+tam: 142857 - index 285715tam: 142857 - index: 285715 - upper: 857142 - range: 142857 - lower: 857142
+tam: 142857 - index 142858tam: 142857 - index: 142858 - upper: 1000000 - range: 142858 - lower: 1000000
+4,1000000,0.895702
+tam: 285714 - index 2000000tam: 285714 - index: 2000000 - upper: 285714 - range: 285714 - lower: 285714
+tam: 285714 - index 1714286tam: 285714 - index: 1714286 - upper: 571428 - range: 285714 - lower: 571428
+tam: 285714 - index 1428572tam: 285714 - index: 1428572 - upper: 857142 - range: 285714 - lower: 857142
+tam: 285714 - index 1142858tam: 285714 - index: 1142858 - upper: 1142857 - range: 285715 - lower: 1142857
+tam: 285714 - index 857144tam: 285714 - index: 857144 - upper: 1428571 - range: 285714 - lower: 1428571
+tam: 285714 - index 571430tam: 285714 - index: 571430 - upper: 1714285 - range: 285714 - lower: 1714285
+tam: 285714 - index 285716tam: 285714 - index: 285716 - upper: 2000000 - range: 285715 - lower: 2000000
+4,2000000,1.821123
+tam: 428571 - index 3000000tam: 428571 - index: 3000000 - upper: 428571 - range: 428571 - lower: 428571
+tam: 428571 - index 2571429tam: 428571 - index: 2571429 - upper: 857142 - range: 428571 - lower: 857142
+tam: 428571 - index 2142858tam: 428571 - index: 2142858 - upper: 1285714 - range: 428572 - lower: 1285714
+tam: 428571 - index 1714287tam: 428571 - index: 1714287 - upper: 1714285 - range: 428571 - lower: 1714285
+tam: 428571 - index 1285716tam: 428571 - index: 1285716 - upper: 2142857 - range: 428572 - lower: 2142857
+tam: 428571 - index 857145tam: 428571 - index: 857145 - upper: 2571428 - range: 428571 - lower: 2571428
+tam: 428571 - index 428574tam: 428571 - index: 428574 - upper: 3000000 - range: 428572 - lower: 3000000
+4,3000000,2.798845
+tam: 571428 - index 4000000tam: 571428 - index: 4000000 - upper: 571428 - range: 571428 - lower: 571428
+tam: 571428 - index 3428572tam: 571428 - index: 3428572 - upper: 1142857 - range: 571429 - lower: 1142857
+tam: 571428 - index 2857144tam: 571428 - index: 2857144 - upper: 1714285 - range: 571428 - lower: 1714285
+tam: 571428 - index 2285716tam: 571428 - index: 2285716 - upper: 2285714 - range: 571429 - lower: 2285714
+tam: 571428 - index 1714288tam: 571428 - index: 1714288 - upper: 2857142 - range: 571428 - lower: 2857142
+tam: 571428 - index 1142860tam: 571428 - index: 1142860 - upper: 3428571 - range: 571429 - lower: 3428571
+tam: 571428 - index 571432tam: 571428 - index: 571432 - upper: 4000000 - range: 571429 - lower: 4000000
+4,4000000,3.799195
+tam: 714285 - index 5000000tam: 714285 - index: 5000000 - upper: 714285 - range: 714285 - lower: 714285
+tam: 714285 - index 4285715tam: 714285 - index: 4285715 - upper: 1428571 - range: 714286 - lower: 1428571
+tam: 714285 - index 3571430tam: 714285 - index: 3571430 - upper: 2142857 - range: 714286 - lower: 2142857
+tam: 714285 - index 2857145tam: 714285 - index: 2857145 - upper: 2857142 - range: 714285 - lower: 2857142
+tam: 714285 - index 2142860tam: 714285 - index: 2142860 - upper: 3571428 - range: 714286 - lower: 3571428
+tam: 714285 - index 1428575tam: 714285 - index: 1428575 - upper: 4285714 - range: 714286 - lower: 4285714
+tam: 714285 - index 714290tam: 714285 - index: 714290 - upper: 5000000 - range: 714286 - lower: 5000000
+4,5000000,4.848409
+tam: 857142 - index 6000000tam: 857142 - index: 6000000 - upper: 857142 - range: 857142 - lower: 857142
+tam: 857142 - index 5142858tam: 857142 - index: 5142858 - upper: 1714285 - range: 857143 - lower: 1714285
+tam: 857142 - index 4285716tam: 857142 - index: 4285716 - upper: 2571428 - range: 857143 - lower: 2571428
+tam: 857142 - index 3428574tam: 857142 - index: 3428574 - upper: 3428571 - range: 857143 - lower: 3428571
+tam: 857142 - index 2571432tam: 857142 - index: 2571432 - upper: 4285714 - range: 857143 - lower: 4285714
+tam: 857142 - index 1714290tam: 857142 - index: 1714290 - upper: 5142857 - range: 857143 - lower: 5142857
+tam: 857142 - index 857148tam: 857142 - index: 857148 - upper: 6000000 - range: 857143 - lower: 6000000
+4,6000000,5.825795
+tam: 1000000 - index 7000000tam: 1000000 - index: 7000000 - upper: 1000000 - range: 1000000 - lower: 1000000
+tam: 1000000 - index 6000000tam: 1000000 - index: 6000000 - upper: 2000000 - range: 1000000 - lower: 2000000
+tam: 1000000 - index 5000000tam: 1000000 - index: 5000000 - upper: 3000000 - range: 1000000 - lower: 3000000
+tam: 1000000 - index 4000000tam: 1000000 - index: 4000000 - upper: 4000000 - range: 1000000 - lower: 4000000
+tam: 1000000 - index 3000000tam: 1000000 - index: 3000000 - upper: 5000000 - range: 1000000 - lower: 5000000
+tam: 1000000 - index 2000000tam: 1000000 - index: 2000000 - upper: 6000000 - range: 1000000 - lower: 6000000
+tam: 1000000 - index 1000000tam: 1000000 - index: 1000000 - upper: 7000000 - range: 1000000 - lower: 7000000
+4,7000000,6.765236
+tam: 1142857 - index 8000000tam: 1142857 - index: 8000000 - upper: 1142857 - range: 1142857 - lower: 1142857
+tam: 1142857 - index 6857143tam: 1142857 - index: 6857143 - upper: 2285714 - range: 1142857 - lower: 2285714
+tam: 1142857 - index 5714286tam: 1142857 - index: 5714286 - upper: 3428571 - range: 1142857 - lower: 3428571
+tam: 1142857 - index 4571429tam: 1142857 - index: 4571429 - upper: 4571428 - range: 1142857 - lower: 4571428
+tam: 1142857 - index 3428572tam: 1142857 - index: 3428572 - upper: 5714285 - range: 1142857 - lower: 5714285
+tam: 1142857 - index 2285715tam: 1142857 - index: 2285715 - upper: 6857142 - range: 1142857 - lower: 6857142
+tam: 1142857 - index 1142858tam: 1142857 - index: 1142858 - upper: 8000000 - range: 1142858 - lower: 8000000
+4,8000000,7.796174
+tam: 1285714 - index 9000000tam: 1285714 - index: 9000000 - upper: 1285714 - range: 1285714 - lower: 1285714
+tam: 1285714 - index 7714286tam: 1285714 - index: 7714286 - upper: 2571428 - range: 1285714 - lower: 2571428
+tam: 1285714 - index 6428572tam: 1285714 - index: 6428572 - upper: 3857142 - range: 1285714 - lower: 3857142
+tam: 1285714 - index 5142858tam: 1285714 - index: 5142858 - upper: 5142857 - range: 1285715 - lower: 5142857
+tam: 1285714 - index 3857144tam: 1285714 - index: 3857144 - upper: 6428571 - range: 1285714 - lower: 6428571
+tam: 1285714 - index 2571430tam: 1285714 - index: 2571430 - upper: 7714285 - range: 1285714 - lower: 7714285
+tam: 1285714 - index 1285716tam: 1285714 - index: 1285716 - upper: 9000000 - range: 1285715 - lower: 9000000

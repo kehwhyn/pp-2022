@@ -79,7 +79,7 @@ echo ################
 ############# Commands...
 
 echo "8 processos"
-mpirun -np 8 out/paralelo >> data/1-node/8-np.csv
+mpirun -np 8 out/paralelo
 echo
 
 ################
