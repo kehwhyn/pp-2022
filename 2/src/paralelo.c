@@ -87,8 +87,6 @@ int main(int argc, char** argv) {
                 MPI_Send(&size, 1, MPI_INT, child_id, 1, MPI_COMM_WORLD);
                 MPI_Send(&lower_bound, 1, MPI_INT, child_id, 1, MPI_COMM_WORLD);
                 MPI_Send(&x[lower_bound], size, MPI_DOUBLE, child_id, 1, MPI_COMM_WORLD);
-                
-                printf("lower: %d - upper: %d - size: %d\n", lower_bound, upper_bound, size);
             }
 
             for (int child_id = 1, tam, index; child_id < num_procs; child_id++) {
